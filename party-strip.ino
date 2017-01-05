@@ -6,7 +6,7 @@
 #include <SPI.h>
 #include <SD.h>
 
-#define BASE_GAIN .2
+#define BASE_GAIN .1
 #define OP_GAIN_MIN 0
 #define OP_GAIN_MAX 20
 
@@ -50,7 +50,7 @@ uint8_t opMode = 0;
 uint8_t prevMode = 0;
 
 long lightTimer = 0;
-int lightUpdateTimeout = 10;
+int lightUpdateTimeout = 5;
 uint8_t lightBrightness = 100;
 
 uint16_t wheelOffset = 0;
